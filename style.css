@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    font-family:"inter";
+    background-color: #F2F2F2;
+    color: #1F1F1F;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+.nav{
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tituloSite{
+    margin-left: 20px;
+}
+
+#linkAcesso{
+    margin-right: 80px;
+}
+
+.textoInicial{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin: 80px 0px 100px 0px;
+}
+
+#texto{
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+.card{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto;
+    padding: 15px;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+input{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    height: 10px;
+    border: none;
+    padding: 15px;
+}
+input::placeholder{
+    color: #39393980;
+}
+
+#latlong{
+    display: flex;
+    justify-content: space-around;
+}
+
+#botao{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    color: white;
+    background: #0C70F2E5;
+    height: 45px;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 0px 6px 4px 0px #0C70F240;
+    border: none;
+    border-radius: 10px;
+}
+
+#botao:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+    transition-duration: 0.25s;
+    color: #F2F2F2;
+    background-color: #0a52b1;
+    box-shadow: 0px 10px 8px 0px #0c70f2ab;
+}
+
+.buscaCEP{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items:center;
+    margin: 300px 0px 20px 0px;
+}
+
+#textoCEP{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.buscaTEMP{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items:center;
+    margin: 150px 0px 20px 0px;
+}
+
+#textoTEMP{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.cardCEP{
+    background: linear-gradient(180deg, rgba(12,112,242,1) 50%, rgba(255,255,255,1) 50%);
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+#linha1{
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+#linha2{
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.cardTEMP{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 200px;
+}
+
+#previsao{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+#rodape{
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    padding: 5px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}

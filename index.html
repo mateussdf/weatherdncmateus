@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DNC Weather</title>
+</head>
+<body>
+
+    <!--Navegador-->
+
+    <header>
+        <nav class="nav">
+            <div id="tituloSite">
+                <h1>DNC Weather</h1>
+            </div>
+            <div id="linkAcesso">
+                <a href="#buscaCEP">Endereços</a>
+                <a href="#buscaTEMP">Previsão do Tempo</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Acesso Principal-->
+
+    <main>
+
+        <!--Formulário-->
+
+        <div class="textoInicial">
+            <div id="texto">
+                <h2>
+                    Descubra Mais com Precisão:<br>
+                    Previsões do Tempo e endereços<br>
+                    em tempo real.
+                </h2>
+            </div>
+            <div id="img1">    
+                <img src="img1.svg" width="150">
+            </div>
+        </div>
+        <div class="card">
+            <form>
+                <div class="form">
+                    <label for="">Primeiro Nome:</label><br>
+                    <input type="text" placeholder="Insira seu primeiro nome">
+                </div>
+
+                <div class="form">
+                    <label for="">E-mail:</label><br>
+                    <input type="text" placeholder="Insira seu e-mail">
+                </div>
+
+                <div class="form">
+                    <label for="">Digite o CEP:</label><br>
+                    <input type="text" placeholder="Insira o CEP" id="cep">
+                </div>
+
+                <div class="form">
+                    <label for="">Digite a latitude e longitude para saber a previsão:</label><br>
+                    <div id="latlong">
+                        <input type="text" placeholder="Insira a Latitude" id="lat">
+                        <input type="text" placeholder="Insira a Longitude" id="long">
+                    </div>
+                </div><br><br>
+                <div class="">    
+                    <button id="botao" onclick="Procurar()" type="button"><strong>Acessar</strong></button>
+                </div>
+            </form>
+        </div>
+
+        <!--Resultados da pesquisa-->
+
+        <div class="buscaCEP" id="buscaCEP">
+            <div id="textoCEP">
+                <h2>
+                    Resultado da busca por CEP:
+                </h2>
+            </div>
+            <div id="img2">    
+                <img src="img2.svg" width="90">
+            </div>
+        </div>
+
+        <div class="cardCEP">
+                <div id="linha1">
+                    <h3>Logradouro/nome</h3>
+                    <h3>Bairro/Distrito</h3>
+                    <h3>Localidade/UF</h3>
+                </div>
+
+                <div id="linha2">
+                    <p id="logradouro"></p>
+                    <p id="bairro"></p>
+                    <p id="UF"></p>
+                </div>
+        </div>
+
+        <div class="buscaTEMP" id="buscaTEMP">
+            <div id="textoTEMP">
+                <h2>
+                    Previsão do tempo na região:
+                </h2>
+            </div>
+            <div id="img3">    
+                <img src="img3.svg" width="90">
+            </div>
+        </div>
+
+        <div class="cardTEMP">
+            <div id="previsao">
+                <p id="temperatura"></p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Rodapé-->
+
+    <footer>
+        <div id="rodape">
+            <a href="">Termos de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
